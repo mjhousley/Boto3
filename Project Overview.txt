@@ -1,0 +1,9 @@
+Using Python boto3 library:
+https://aws.amazon.com/sdk-for-python/
+https://boto3.amazonaws.com/v1/documentation/api/latest/index.html
+
+ 
+
+1. Create an IAM user with s3 full access permissions (all using python)
+2. Create an s3 bucket and upload your image of choice (all using python)
+3. Create an additional function to delete both the s3 bucket and IAM user. 

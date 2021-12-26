@@ -1,0 +1,4 @@
+aws iam list-policies --query 'Policies[?PolicyName==`FullAccess`].Arn' --output text
+aws iam list-policies --query 'Policies[*].[PolicyName, Arn]' --output text | grep AmazonS3 
+arn:aws:iam::aws:policy/AmazonS3FullAccess
+aws s3 rb s3://shakurstevie22312 --force

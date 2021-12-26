@@ -1,0 +1,19 @@
+import boto3
+iam = boto3.client('iam') # IAM low level client object
+response = iam.attach_user_policy(
+    UserName = 'shawn_porter', #Name of user
+    PolicyArn = 'arn:aws:iam::517654099622:policy/EC2S3FULLACCESS' 
+# Policy ARN which you want to asign to user
+)
+print(response)
+
+
+import boto3
+iam = boto3.client('iam') # IAM low level client object
+response = iam.attach_user_policy(
+UserName = 'first_user', #Name of user
+PolicyArn = 'arn:aws:iam::aws:policy/AmazonS3ReadOnlyAccess' 
+# Policy ARN which you want to asign to user
+)
+print(response)
+#S3FullAccess = "arn:aws:iam::aws:policy//AmazonS3FullAccess"
